@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #1a73e8;
+    --dark-color: #121212;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 56px;
+    background-color: #f4f7f6;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: url('https://t4.ftcdn.net/jpg/02/82/00/75/360_F_282007508_wdCUP7hUMNK1Cuzj7XmOcFmzyzJ0Nnp9.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#cartCount {
+    font-size: 0.7rem;
+    padding: 0.35em 0.65em;
+}
+
+.pulse {
+    animation: pulse-animation 0.3s ease-out;
+}
+
+@keyframes pulse-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1); }
+}
